@@ -1,11 +1,6 @@
-/* Snow Animation Background */
-.hero {
-    position: relative;
-    overflow: hidden;
-}
-
+/* Snow Animation Background - Full Page */
 .snow {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -49,10 +44,4 @@
     100% {
         transform: translateY(50%);
     }
-}
-
-/* Ensure hero content is above the snow */
-.hero-content {
-    position: relative;
-    z-index: 1;
 }
