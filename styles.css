@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overscroll-behavior-y: none;
+}
+
 :root {
     --bg-color: #0a0a0a;
     --text-primary: #ffffff;
@@ -15,12 +19,12 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background-color: var(--bg-color);
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
     position: relative;
     z-index: 0;
+    overscroll-behavior-y: none;
 }
 
 /* Navigation */
@@ -28,7 +32,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(10, 10, 10, 0.9);
+    background-color: var(--bg-color);
     border-bottom: 1px solid var(--border-color);
     z-index: 1000;
     padding: 1rem 0;
