@@ -17,6 +17,16 @@ html {
     --hover-bg: #252525;
 }
 
+/* Light theme variables */
+:root[data-theme="light"] {
+    --bg-color: #f5f5f5;
+    --text-primary: #1a1a1a;
+    --text-secondary: #666666;
+    --card-bg: #ffffff;
+    --border-color: #e0e0e0;
+    --hover-bg: #f0f0f0;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     color: var(--text-primary);
@@ -46,12 +56,21 @@ nav .container {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    gap: 1rem;
+}
+
+nav .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    order: 1;
 }
 
 nav h1 {
     font-size: 1.1rem;
     font-weight: 500;
     color: var(--text-secondary);
+    margin: 0;
 }
 
 nav ul {
@@ -61,6 +80,7 @@ nav ul {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    order: 2;
 }
 
 nav a {
@@ -74,9 +94,15 @@ nav a:hover {
     color: var(--text-primary);
 }
 
+nav a.active {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
 nav .social-links {
     display: flex;
     gap: 0.75rem;
+    order: 3;
 }
 
 nav .social-links a {
@@ -94,10 +120,48 @@ nav .social-links a {
 
 nav .social-links a:hover {
     color: var(--text-primary);
+    border-color: var(--text-primary);
 }
 
 nav .social-links a svg {
     flex-shrink: 0;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    border: 1px solid var(--text-secondary);
+    color: var(--text-secondary);
+    border-radius: 5px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.2rem 0.4rem;
+    transition: all 0.3s;
+    background: none;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+    color: var(--text-primary);
+    border-color: var(--text-primary);
+}
+
+.theme-toggle svg {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    fill: none;
+}
+
+.theme-toggle svg path,
+.theme-toggle svg circle {
+    stroke: currentColor;
+    fill: none;
 }
 
 /* Hero Section */
@@ -332,6 +396,7 @@ footer .footer-social a {
 
 footer .footer-social a:hover {
     color: var(--text-primary);
+    border-color: var(--text-primary);
 }
 
 footer .footer-social a svg {
@@ -341,6 +406,46 @@ footer .footer-social a svg {
 /* Smooth Scroll */
 html {
     scroll-behavior: smooth;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-to-top:hover {
+    background-color: var(--hover-bg);
+    color: var(--text-primary);
+    transform: translateX(-50%) scale(1.1);
+}
+
+.scroll-to-top:not(:hover) {
+    transform: translateX(-50%);
 }
 
 /* ============================================
