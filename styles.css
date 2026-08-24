@@ -454,6 +454,10 @@ html {
    ============================================ */
 
 @media (max-width: 1000px) {
+    .scroll-to-top {
+        display: none !important;
+    }
+
     /* Navigation */
     nav {
         padding: 0.75rem 0;
