@@ -489,8 +489,7 @@ html {
     }
 
     nav h1 {
-        font-size: 0.9rem;
-        flex: 1;
+        display: none;
     }
 
     nav ul {
