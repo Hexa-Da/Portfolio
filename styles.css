@@ -148,7 +148,7 @@ nav .nav-controls {
     justify-content: center;
     gap: 0.4rem;
     padding: 0.2rem 0.4rem;
-    transition: all 0.3s;
+    transition: color 0.3s, border-color 0.3s;
     background: none;
     cursor: pointer;
     flex-shrink: 0;
@@ -157,6 +157,17 @@ nav .nav-controls {
 .theme-toggle:hover {
     color: var(--text-primary);
     border-color: var(--text-primary);
+}
+
+nav .nav-controls .theme-toggle {
+    width: 1.85rem;
+    height: 1.85rem;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#lang-toggle #lang-label {
+    line-height: 1;
 }
 
 .theme-toggle svg {
