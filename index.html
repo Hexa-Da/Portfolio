@@ -7,6 +7,7 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="animations.css">
+    <script src="i18n.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -18,22 +19,22 @@
         <div class="container">
             <div class="nav-left">
                 <div class="nav-controls">
-                    <button id="theme-toggle" class="theme-toggle" data-i18n-title="theme_title" data-i18n-aria="theme_aria" title="Basculer le thème" aria-label="Basculer entre thème clair et sombre">
+                    <button id="theme-toggle" class="theme-toggle" data-i18n-title="theme_title" data-i18n-aria="theme_aria">
                         <svg id="theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
                         </svg>
                     </button>
-                    <button id="lang-toggle" class="theme-toggle" data-i18n-title="lang_title" data-i18n-aria="lang_aria" title="Choisir la langue" aria-label="Basculer entre français et anglais">
+                    <button id="lang-toggle" class="theme-toggle" data-i18n-title="lang_title" data-i18n-aria="lang_aria">
                         <span id="lang-label">EN</span>
                     </button>
                 </div>
                 <h1>Paul-Antoine Paris</h1>
             </div>
             <ul>
-                <li><a href="#home" data-i18n="nav_home">Accueil</a></li>
-                <li><a href="#education" data-i18n="nav_education">Formation</a></li>
-                <li><a href="#experience" data-i18n="nav_experience">Expérience</a></li>
-                <li><a href="#projects" data-i18n="nav_projects">Projets</a></li>
+                <li><a href="#home" data-i18n="nav_home"></a></li>
+                <li><a href="#education" data-i18n="nav_education"></a></li>
+                <li><a href="#experience" data-i18n="nav_experience"></a></li>
+                <li><a href="#projects" data-i18n="nav_projects"></a></li>
             </ul>
             <div class="social-links">
                 <a href="https://github.com/Hexa-Da" title="GitHub">
@@ -62,7 +63,7 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Paul-Antoine Paris</h1>
-            <h2 data-i18n="hero_subtitle">Étudiant en informatique</h2>
+            <h2 data-i18n="hero_subtitle"></h2>
             <div class="hero-social">
                 <a href="https://github.com/Hexa-Da" title="GitHub">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -89,46 +90,32 @@
     <!-- Education Section -->
     <section id="education">
         <div class="container">
-            <h2 data-i18n="section_education">Formation</h2>
+            <h2 data-i18n="section_education"></h2>
             <div class="cards-grid">
                 <a href="https://mines-nancy.univ-lorraine.fr/" target="_blank" class="card">
                     <div class="card-header">
                         <img src="images/mines.jpg" alt="Mines Nancy" class="card-logo">
                         <div class="card-title-group">
-                            <h3 data-i18n="edu_mines_title">Ingénieur Civil des Mines</h3>
-                            <div class="date" data-i18n="edu_mines_date">Sept 2023 - Présent</div>
+                            <h3 data-i18n="edu_mines_title"></h3>
+                            <div class="date" data-i18n="edu_mines_date"></div>
                         </div>
                     </div>
-                    <p class="card-description" data-i18n-html="edu_mines_desc">
-                        Ingénieur Civil des Mines Nancy<br>
-                        (Spécialité Informatique)
-                    </p>
-                    <p class="card-description" data-i18n="edu_mines_location">
-                        Nancy, France
-                    </p>
-                    <p class="card-description" data-i18n="edu_mines_courses">
-                        Cours : Algorithmique, Structures de données, Apprentissage automatique, Ingénierie logicielle
-                    </p>
+                    <p class="card-description" data-i18n-html="edu_mines_desc"></p>
+                    <p class="card-description" data-i18n="edu_mines_location"></p>
+                    <p class="card-description" data-i18n="edu_mines_courses"></p>
                 </a>
 
                 <a href="https://lycee-lafayette-clermont.fr/" target="_blank" class="card">
                     <div class="card-header">
                         <img src="images/lafayette.jpg" alt="Lycée Lafayette" class="card-logo">
                         <div class="card-title-group">
-                            <h3 data-i18n="edu_cpge_title">CPGE TSI</h3>
-                            <div class="date" data-i18n="edu_cpge_date">Sept 2020 - Juin 2023</div>
+                            <h3 data-i18n="edu_cpge_title"></h3>
+                            <div class="date" data-i18n="edu_cpge_date"></div>
                         </div>
                     </div>
-                    <p class="card-description" data-i18n-html="edu_cpge_desc">
-                        Classe Préparatoire aux Grandes Écoles<br>
-                        (Filière Technologie et Sciences Industrielles)
-                    </p>
-                    <p class="card-description" data-i18n="edu_cpge_location">
-                        Clermont-Ferrand, France
-                    </p>
-                    <p class="card-description" data-i18n="edu_cpge_courses">
-                        Cours : Informatique, Mathématiques, Physique, Sciences de l'ingénieur
-                    </p>
+                    <p class="card-description" data-i18n-html="edu_cpge_desc"></p>
+                    <p class="card-description" data-i18n="edu_cpge_location"></p>
+                    <p class="card-description" data-i18n="edu_cpge_courses"></p>
                 </a>
             </div>
         </div>
@@ -137,26 +124,24 @@
     <!-- Experience Section -->
     <section id="experience">
         <div class="container">
-            <h2 data-i18n="section_experience">Expérience</h2>
+            <h2 data-i18n="section_experience"></h2>
             <div class="cards-grid">
                 <a href="https://boutique.orange.fr/" target="_blank" class="card">
                     <div class="card-header">
                         <img src="images/orange.png" alt="Orange" class="card-logo">
                         <div class="card-title-group">
-                            <h3 data-i18n="exp_orange_title">Développeur Junior</h3>
-                            <div class="date" data-i18n="exp_orange_date">Juin 2026 - Déc. 2026</div>
+                            <h3 data-i18n="exp_orange_title"></h3>
+                            <div class="date" data-i18n="exp_orange_date"></div>
                         </div>
                     </div>
-                    <p class="card-description" data-i18n="exp_orange_desc">
-                        Stage dans une équipe de 20 développeurs chez Orange pour la boutique.orange.fr
-                    </p>
+                    <p class="card-description" data-i18n="exp_orange_desc"></p>
                     <ul class="card-bullets">
-                        <li data-i18n="exp_orange_b1">Intégration de l'IA agentique dans le cycle de delivery d'une équipe de 4 dev.</li>
-                        <li data-i18n="exp_orange_b2">Cadrage d'agents, gouvernance du contexte et de l'architecture puis industrialisation des refactors/modernisations</li>
-                        <li data-i18n="exp_orange_b3">Participation aux évolutions fonctionnelles en complément de la résorption de la dette technique</li>
+                        <li data-i18n="exp_orange_b1"></li>
+                        <li data-i18n="exp_orange_b2"></li>
+                        <li data-i18n="exp_orange_b3"></li>
                     </ul>
                     <div class="card-tags">
-                        <span class="tag" data-i18n="tag_agentic_ai">IA agentique</span>
+                        <span class="tag" data-i18n="tag_agentic_ai"></span>
                         <span class="tag">Harness</span>
                         <span class="tag">Mongo</span>
                         <span class="tag">Gitlab</span>
@@ -171,22 +156,20 @@
                     <div class="card-header">
                         <img src="images/cartel.jpg" alt="Cartel Nancy" class="card-logo">
                         <div class="card-title-group">
-                            <h3 data-i18n="exp_cartel_title">Responsable Partenariats</h3>
-                            <div class="date" data-i18n="exp_cartel_date">Avril 2025 - Avril 2026</div>
+                            <h3 data-i18n="exp_cartel_title"></h3>
+                            <div class="date" data-i18n="exp_cartel_date"></div>
                         </div>
                     </div>
-                    <p class="card-description" data-i18n="exp_cartel_desc">
-                        Coordination et gestion du pôle partenariats pour l'événement "Cartel 2026" à Nancy.
-                    </p>
+                    <p class="card-description" data-i18n="exp_cartel_desc"></p>
                     <ul class="card-bullets">
-                        <li data-i18n="exp_cartel_b1">Recherche, prospection et négociation de partenariats avec des entreprises locales et nationales</li>
-                        <li data-i18n="exp_cartel_b2">Suivi des relations avec les partenaires, élaboration de supports de communication dédiés</li>
-                        <li data-i18n="exp_cartel_b3">Rédaction et mise en place des contrats de sponsoring</li>
+                        <li data-i18n="exp_cartel_b1"></li>
+                        <li data-i18n="exp_cartel_b2"></li>
+                        <li data-i18n="exp_cartel_b3"></li>
                     </ul>
                     <div class="card-tags">
-                        <span class="tag" data-i18n="tag_communication">Communication</span>
-                        <span class="tag" data-i18n="tag_partnerships">Partenariats</span>
-                        <span class="tag" data-i18n="tag_administration">Administration</span>
+                        <span class="tag" data-i18n="tag_communication"></span>
+                        <span class="tag" data-i18n="tag_partnerships"></span>
+                        <span class="tag" data-i18n="tag_administration"></span>
                     </div>
                 </a>
 
@@ -194,23 +177,21 @@
                     <div class="card-header">
                         <img src="images/raid.jpg" alt="Raid Mines Nancy" class="card-logo">
                         <div class="card-title-group">
-                            <h3 data-i18n="exp_raid_title">Responsable Partenariats</h3>
-                            <div class="date" data-i18n="exp_raid_date">Septembre 2024 - Juin 2025</div>
+                            <h3 data-i18n="exp_raid_title"></h3>
+                            <div class="date" data-i18n="exp_raid_date"></div>
                         </div>
                     </div>
-                    <p class="card-description" data-i18n="exp_raid_desc">
-                        Coordination et gestion du pôle partenariats du "Raid Mines Nancy" en 2025.
-                    </p>
+                    <p class="card-description" data-i18n="exp_raid_desc"></p>
                     <ul class="card-bullets">
-                        <li data-i18n="exp_raid_b1">Recherche et prospection de partenariats avec entreprises et institutions locales</li>
-                        <li data-i18n="exp_raid_b2">Suivi des relations avec les partenaires</li>
-                        <li data-i18n="exp_raid_b3">Gestion d'une équipe de 3 membres.</li>
-                        <li data-i18n="exp_raid_b4">Rédaction et mise en place des contrats de sponsoring</li>
+                        <li data-i18n="exp_raid_b1"></li>
+                        <li data-i18n="exp_raid_b2"></li>
+                        <li data-i18n="exp_raid_b3"></li>
+                        <li data-i18n="exp_raid_b4"></li>
                     </ul>
                     <div class="card-tags">
-                        <span class="tag" data-i18n="tag_team_mgmt">Gestion d'équipe</span>
-                        <span class="tag" data-i18n="tag_communication">Communication</span>
-                        <span class="tag" data-i18n="tag_partnerships">Partenariats</span>
+                        <span class="tag" data-i18n="tag_team_mgmt"></span>
+                        <span class="tag" data-i18n="tag_communication"></span>
+                        <span class="tag" data-i18n="tag_partnerships"></span>
                     </div>
                 </a>
 
@@ -245,23 +226,21 @@
     <!-- Projects Section -->
     <section id="projects">
         <div class="container">
-            <h2 data-i18n="section_projects">Projets</h2>
+            <h2 data-i18n="section_projects"></h2>
             <div class="cards-grid">
                 <a href="https://jeedom.com" target="_blank" class="card">
                     <div class="card-header">
                         <img src="images/jeedom.png" alt="Assistant Jeedom" class="card-logo">
                         <div class="card-title-project">
-                            <h3 data-i18n="proj_jeedom_title">Assistant Jeedom</h3>
+                            <h3 data-i18n="proj_jeedom_title"></h3>
                         </div>
                     </div>
-                    <p class="card-description" data-i18n="proj_jeedom_desc">
-                        Assistant de support Jeedom basé sur le Cursor Agent SDK, avec app web.
-                    </p>
+                    <p class="card-description" data-i18n="proj_jeedom_desc"></p>
                     <ul class="card-bullets">
-                        <li data-i18n="proj_jeedom_b1">Chat web local (Node/TypeScript) branché sur le Cursor Agent SDK</li>
-                        <li data-i18n="proj_jeedom_b2">Base de connaissances Jeedom et profil utilisateur affiné au fil des sessions</li>
-                        <li data-i18n="proj_jeedom_b3">Conseil uniquement dans l'UI Jeedom : pas d'accès shell ni d'écriture libre</li>
-                        <li data-i18n="proj_jeedom_b4">Support des captures d'écran et outils restreints (lecture, recherche, webFetch)</li>
+                        <li data-i18n="proj_jeedom_b1"></li>
+                        <li data-i18n="proj_jeedom_b2"></li>
+                        <li data-i18n="proj_jeedom_b3"></li>
+                        <li data-i18n="proj_jeedom_b4"></li>
                     </ul>
                     <div class="card-tags">
                         <span class="tag">TypeScript</span>
@@ -275,17 +254,15 @@
                     <div class="card-header">
                         <img src="images/veille-btp.jpg" alt="Veille SPSTI BTP" class="card-logo">
                         <div class="card-title-project">
-                            <h3 data-i18n="proj_veille_title">Veille SPSTI BTP</h3>
+                            <h3 data-i18n="proj_veille_title"></h3>
                         </div>
                     </div>
-                    <p class="card-description" data-i18n="proj_veille_desc">
-                        Agent Cursor pour collecter, trier et rédiger un rapport de veille sur la médecine du travail / SST BTP.
-                    </p>
+                    <p class="card-description" data-i18n="proj_veille_desc"></p>
                     <ul class="card-bullets">
-                        <li data-i18n="proj_veille_b1">Collecte automatisée depuis une liste de sources configurables</li>
-                        <li data-i18n="proj_veille_b2">Sélection manuelle des articles retenus via une UI web locale</li>
-                        <li data-i18n="proj_veille_b3">Génération de rapport Word sur template personnalisé</li>
-                        <li data-i18n="proj_veille_b4">Ciblage médecine du travail, AT/MP et prévention BTP (fenêtre 15 jours)</li>
+                        <li data-i18n="proj_veille_b1"></li>
+                        <li data-i18n="proj_veille_b2"></li>
+                        <li data-i18n="proj_veille_b3"></li>
+                        <li data-i18n="proj_veille_b4"></li>
                     </ul>
                     <div class="card-tags">
                         <span class="tag">Python</span>
@@ -298,16 +275,15 @@
                     <div class="card-header">
                         <img src="images/homelab.png" alt="Homelab Proxmox" class="card-logo">
                         <div class="card-title-project">
-                            <h3 data-i18n="proj_homelab_title">Homelab Proxmox</h3>
+                            <h3 data-i18n="proj_homelab_title"></h3>
                         </div>
                     </div>
-                    <p class="card-description" data-i18n="proj_homelab_desc">
-                        Lab personnel : services publics, NAS privé et DNS Pi-hole, avec accès distant Tailscale.                    </p>
+                    <p class="card-description" data-i18n="proj_homelab_desc"></p>
                     <ul class="card-bullets">
-                        <li data-i18n="proj_homelab_b1">Hyperviseur Proxmox VE (LXC) : CumMap public et NAS File Browser privé</li>
-                        <li data-i18n="proj_homelab_b2">Accès distant Tailscale (SSH, UI Proxmox, NAS web) sans exposer l'admin</li>
-                        <li data-i18n="proj_homelab_b3">Tunnel Cloudflare pour cummap.homeofparis.com</li>
-                        <li data-i18n="proj_homelab_b4">Raspberry Pi DietPi en Pi-hole DNS LAN</li>
+                        <li data-i18n="proj_homelab_b1"></li>
+                        <li data-i18n="proj_homelab_b2"></li>
+                        <li data-i18n="proj_homelab_b3"></li>
+                        <li data-i18n="proj_homelab_b4"></li>
                     </ul>
                     <div class="card-tags">
                         <span class="tag">Proxmox</span>
@@ -325,15 +301,13 @@
                             <h3>Cartel Nancy 2026</h3>
                         </div>
                     </div>
-                    <p class="card-description" data-i18n="proj_cartel_desc">
-                        Application mobile officielle pour l'événement "Cartel 2026" à Nancy, permettant aux 2300+ participants de naviguer parmi les événements.
-                    </p>
+                    <p class="card-description" data-i18n="proj_cartel_desc"></p>
                     <ul class="card-bullets">
-                        <li data-i18n="proj_cartel_b1">Application React/TypeScript avec Capacitor pour Android et iOS</li>
-                        <li data-i18n="proj_cartel_b2">Carte interactive : lieux, matchs, soirées, hôtels, restaurants</li>
-                        <li data-i18n="proj_cartel_b3">Chat temps réel avec notifications push</li>
-                        <li data-i18n="proj_cartel_b4">Planning & événements filtrables</li>
-                        <li data-i18n="proj_cartel_b5">Système de paris sportifs</li>
+                        <li data-i18n="proj_cartel_b1"></li>
+                        <li data-i18n="proj_cartel_b2"></li>
+                        <li data-i18n="proj_cartel_b3"></li>
+                        <li data-i18n="proj_cartel_b4"></li>
+                        <li data-i18n="proj_cartel_b5"></li>
                     </ul>
                     <div class="card-tags">
                         <span class="tag">React</span>
@@ -353,14 +327,12 @@
                             <h3>CumMap</h3>
                         </div>
                     </div>
-                    <p class="card-description" data-i18n="proj_cummap_desc">
-                        Application web interactive, client web de l'application officielle du Cartel Nancy 2026.
-                    </p>
+                    <p class="card-description" data-i18n="proj_cummap_desc"></p>
                     <ul class="card-bullets">
-                        <li data-i18n="proj_cummap_b1">Carte interactive avec géolocalisation et marqueurs personnalisés</li>
-                        <li data-i18n="proj_cummap_b2">Gestion des événements avec filtres avancés et calendrier interactif</li>
-                        <li data-i18n="proj_cummap_b3">Mode administrateur avec édition des lieux, matchs et messages</li>
-                        <li data-i18n="proj_cummap_b4">Synchronisation en temps réel avec l'application mobile officielle</li>
+                        <li data-i18n="proj_cummap_b1"></li>
+                        <li data-i18n="proj_cummap_b2"></li>
+                        <li data-i18n="proj_cummap_b3"></li>
+                        <li data-i18n="proj_cummap_b4"></li>
                     </ul>
                     <div class="card-tags">
                         <span class="tag">React</span>
@@ -379,14 +351,12 @@
                             <h3>ImageProcessingApp</h3>
                         </div>
                     </div>
-                    <p class="card-description" data-i18n="proj_img_desc">
-                        Application JavaFX de traitement d'image et dessin développée en équipe.
-                    </p>
+                    <p class="card-description" data-i18n="proj_img_desc"></p>
                     <ul class="card-bullets">
-                        <li data-i18n="proj_img_b1">Opérations géométriques (symétries, rotations, crop) et effets avancés</li>
-                        <li data-i18n="proj_img_b2">Effet mosaïque utilisant un KdTree pour optimisation des performances</li>
-                        <li data-i18n="proj_img_b3">Seam Carving pour redimensionnement intelligent des images</li>
-                        <li data-i18n="proj_img_b4">Undo/Redo, zoom, navigation et raccourcis clavier</li>
+                        <li data-i18n="proj_img_b1"></li>
+                        <li data-i18n="proj_img_b2"></li>
+                        <li data-i18n="proj_img_b3"></li>
+                        <li data-i18n="proj_img_b4"></li>
                     </ul>
                     <div class="card-tags">
                         <span class="tag">Java</span>
@@ -400,17 +370,15 @@
                     <div class="card-header">
                         <img src="images/andra.png" alt="ANDRA" class="card-logo">
                         <div class="card-title-project">
-                            <h3 data-i18n="proj_andra_title">Robotique ANDRA</h3>
+                            <h3 data-i18n="proj_andra_title"></h3>
                         </div>
                     </div>
-                    <p class="card-description" data-i18n="proj_andra_desc">
-                        Projet industriel avec l'ANDRA : robotique et IA pour l'exploration autonome des galeries souterraines et la détection de fissures.
-                    </p>
+                    <p class="card-description" data-i18n="proj_andra_desc"></p>
                     <ul class="card-bullets">
-                        <li data-i18n="proj_andra_b1">Détection de fissures avec YOLOv11 entraîné sur un dataset spécifique aux galeries</li>
-                        <li data-i18n="proj_andra_b2">Navigation autonome avec ROS2 (Humble) et localisation AMCL sur cartes préétablies</li>
-                        <li data-i18n="proj_andra_b3">Intégration de multiples capteurs (ZED2, LiDAR 2D, caméra PTZ, caméra 360°)</li>
-                        <li data-i18n="proj_andra_b4">Robot Agilex Scout Mini équipé d'une Jetson Orin Nano pour traitement embarqué</li>
+                        <li data-i18n="proj_andra_b1"></li>
+                        <li data-i18n="proj_andra_b2"></li>
+                        <li data-i18n="proj_andra_b3"></li>
+                        <li data-i18n="proj_andra_b4"></li>
                     </ul>
                     <div class="card-tags">
                         <span class="tag">ROS2</span>
@@ -431,13 +399,11 @@
                             <h3>YOLO Object Detection</h3>
                         </div>
                     </div>
-                    <p class="card-description" data-i18n="proj_yolo_desc">
-                        Analyseur d'images et vidéos utilisant YOLOv8/YOLOv11 avec PyTorch pour la détection, classification et segmentation d'objets sur plusieurs datasets.
-                    </p>
+                    <p class="card-description" data-i18n="proj_yolo_desc"></p>
                     <ul class="card-bullets">
-                        <li data-i18n="proj_yolo_b1">Support de multiples datasets (COCO 80 classes, Open Images V7 600 classes)</li>
-                        <li data-i18n="proj_yolo_b2">Détection et segmentation d'objets en temps réel sur images et vidéos</li>
-                        <li data-i18n="proj_yolo_b3">Entraînement de modèles personnalisés avec Docker (ARM64, AMD64, GPU)</li>
+                        <li data-i18n="proj_yolo_b1"></li>
+                        <li data-i18n="proj_yolo_b2"></li>
+                        <li data-i18n="proj_yolo_b3"></li>
                     </ul>
                     <div class="card-tags">
                         <span class="tag">Python</span>
@@ -453,17 +419,15 @@
                     <div class="card-header">
                         <img src="images/bombe.png" alt="Demineur Android" class="card-logo">
                         <div class="card-title-project">
-                            <h3 data-i18n="proj_mines_title">Démineur Android</h3>
+                            <h3 data-i18n="proj_mines_title"></h3>
                         </div>
                     </div>
-                    <p class="card-description" data-i18n="proj_mines_desc">
-                        Jeu du Démineur pour Android.
-                    </p>
+                    <p class="card-description" data-i18n="proj_mines_desc"></p>
                     <ul class="card-bullets">
-                        <li data-i18n="proj_mines_b1">Trois niveaux de difficulté (Facile 9x9, Moyen 16x16, Difficile 20x20)</li>
-                        <li data-i18n="proj_mines_b2">Premier clic toujours sûr et révélation automatique des cases vides adjacentes</li>
-                        <li data-i18n="proj_mines_b3">Pose de drapeaux par appui long et chronomètre intégré</li>
-                        <li data-i18n="proj_mines_b4">Système de records avec affichage du meilleur temps pour chaque difficulté</li>
+                        <li data-i18n="proj_mines_b1"></li>
+                        <li data-i18n="proj_mines_b2"></li>
+                        <li data-i18n="proj_mines_b3"></li>
+                        <li data-i18n="proj_mines_b4"></li>
                     </ul>
                     <div class="card-tags">
                         <span class="tag">Java</span>
@@ -479,14 +443,12 @@
                             <h3>Trivial Pursuit Android</h3>
                         </div>
                     </div>
-                    <p class="card-description" data-i18n="proj_trivial_desc">
-                        Application Android recréant le célèbre jeu de société Trivial Pursuit.
-                    </p>
+                    <p class="card-description" data-i18n="proj_trivial_desc"></p>
                     <ul class="card-bullets">
-                        <li data-i18n="proj_trivial_b1">Mode jeu classique avec jusqu'à 6 joueurs et mode entraînement</li>
-                        <li data-i18n="proj_trivial_b2">6 catégories (Géographie, Histoire, Divertissement, Art et Littérature, Sciences et Nature, Sports et Loisirs)</li>
-                        <li data-i18n="proj_trivial_b3">20 questions par catégorie avec système de score et suivi des progrès</li>
-                        <li data-i18n="proj_trivial_b4">Tolérance aux réponses avec acceptation des variations orthographiques</li>
+                        <li data-i18n="proj_trivial_b1"></li>
+                        <li data-i18n="proj_trivial_b2"></li>
+                        <li data-i18n="proj_trivial_b3"></li>
+                        <li data-i18n="proj_trivial_b4"></li>
                     </ul>
                     <div class="card-tags">
                         <span class="tag">Java</span>
@@ -499,17 +461,15 @@
                     <div class="card-header">
                         <img src="images/boid.png" alt="Simulation de Nuée d'Oiseaux" class="card-logo">
                         <div class="card-title-project">
-                            <h3 data-i18n="proj_boids_title">Simulation de Nuée d'Oiseaux</h3>
+                            <h3 data-i18n="proj_boids_title"></h3>
                         </div>
                     </div>
-                    <p class="card-description" data-i18n="proj_boids_desc">
-                        Simulation interactive de vol d'oiseaux en nuée implémentée en Java.
-                    </p>
+                    <p class="card-description" data-i18n="proj_boids_desc"></p>
                     <ul class="card-bullets">
-                        <li data-i18n="proj_boids_b1">Implémentation des trois règles de Boids : Séparation, Alignement et Cohésion</li>
-                        <li data-i18n="proj_boids_b2">Génération procédurale de terrain avec l'algorithme de Perlin Noise</li>
-                        <li data-i18n="proj_boids_b3">Interface graphique interactive avec modification des paramètres en temps réel</li>
-                        <li data-i18n="proj_boids_b4">Système de quadrillage optimisé pour la détection des voisins</li>
+                        <li data-i18n="proj_boids_b1"></li>
+                        <li data-i18n="proj_boids_b2"></li>
+                        <li data-i18n="proj_boids_b3"></li>
+                        <li data-i18n="proj_boids_b4"></li>
                     </ul>
                     <div class="card-tags">
                         <span class="tag">Java</span>
@@ -524,17 +484,15 @@
                     <div class="card-header">
                         <img src="images/voiture.png" alt="Simulation de Trafic Routier" class="card-logo">
                         <div class="card-title-project">
-                            <h3 data-i18n="proj_traffic_title">Simulation de Trafic Routier</h3>
+                            <h3 data-i18n="proj_traffic_title"></h3>
                         </div>
                     </div>
-                    <p class="card-description" data-i18n="proj_traffic_desc">
-                        Simulation de trafic routier développée en Python dans le cadre d'un TIPE.
-                    </p>
+                    <p class="card-description" data-i18n="proj_traffic_desc"></p>
                     <ul class="card-bullets">
-                        <li data-i18n="proj_traffic_b1">Simulation de 1, 2 ou 4 carrefours interconnectés</li>
-                        <li data-i18n="proj_traffic_b2">Gestion de différents types de véhicules (voitures, bus, camions, motos)</li>
-                        <li data-i18n="proj_traffic_b3">Deux modes de fonctionnement des feux de circulation</li>
-                        <li data-i18n="proj_traffic_b4">Interface graphique interactive avec Pygame et analyse en temps réel</li>
+                        <li data-i18n="proj_traffic_b1"></li>
+                        <li data-i18n="proj_traffic_b2"></li>
+                        <li data-i18n="proj_traffic_b3"></li>
+                        <li data-i18n="proj_traffic_b4"></li>
                     </ul>
                     <div class="card-tags">
                         <span class="tag">Python</span>
