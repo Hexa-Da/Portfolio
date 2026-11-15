@@ -90,8 +90,10 @@ nav a {
     font-size: 0.95rem;
 }
 
-nav a:hover {
-    color: var(--text-primary);
+@media (hover: hover) and (pointer: fine) {
+    nav a:hover {
+        color: var(--text-primary);
+    }
 }
 
 nav a.active {
@@ -118,9 +120,11 @@ nav .social-links a {
     transition: all 0.3s;
 }
 
-nav .social-links a:hover {
-    color: var(--text-primary);
-    border-color: var(--text-primary);
+@media (hover: hover) and (pointer: fine) {
+    nav .social-links a:hover {
+        color: var(--text-primary);
+        border-color: var(--text-primary);
+    }
 }
 
 nav .social-links a svg {
@@ -154,9 +158,11 @@ nav .nav-controls {
     flex-shrink: 0;
 }
 
-.theme-toggle:hover {
-    color: var(--text-primary);
-    border-color: var(--text-primary);
+@media (hover: hover) and (pointer: fine) {
+    .theme-toggle:hover {
+        color: var(--text-primary);
+        border-color: var(--text-primary);
+    }
 }
 
 nav .nav-controls .theme-toggle {
@@ -230,8 +236,10 @@ nav .nav-controls .theme-toggle {
     gap: 0.5rem;
 }
 
-.hero-social a:hover {
-    color: var(--text-primary);
+@media (hover: hover) and (pointer: fine) {
+    .hero-social a:hover {
+        color: var(--text-primary);
+    }
 }
 
 .hero-social a svg {
@@ -278,10 +286,12 @@ section h2 {
     display: block;
 }
 
-.card:hover {
-    background-color: var(--hover-bg);
-    border-color: var(--text-primary);
-    transform: translateY(-4px);
+@media (hover: hover) and (pointer: fine) {
+    .card:hover {
+        background-color: var(--hover-bg);
+        border-color: var(--text-primary);
+        transform: translateY(-4px);
+    }
 }
 
 .card-header {
@@ -415,9 +425,11 @@ footer .footer-social a {
     transition: all 0.3s;
 }
 
-footer .footer-social a:hover {
-    color: var(--text-primary);
-    border-color: var(--text-primary);
+@media (hover: hover) and (pointer: fine) {
+    footer .footer-social a:hover {
+        color: var(--text-primary);
+        border-color: var(--text-primary);
+    }
 }
 
 footer .footer-social a svg {
@@ -459,14 +471,16 @@ html {
     visibility: visible;
 }
 
-.scroll-to-top:hover {
-    background-color: var(--hover-bg);
-    color: var(--text-primary);
-    transform: translateX(-50%) scale(1.1);
-}
+@media (hover: hover) and (pointer: fine) {
+    .scroll-to-top:hover {
+        background-color: var(--hover-bg);
+        color: var(--text-primary);
+        transform: translateX(-50%) scale(1.1);
+    }
 
-.scroll-to-top:not(:hover) {
-    transform: translateX(-50%);
+    .scroll-to-top:not(:hover) {
+        transform: translateX(-50%);
+    }
 }
 
 /* ============================================
